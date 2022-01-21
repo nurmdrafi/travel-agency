@@ -2,3 +2,6 @@
   width: 600px;
   height: 300px;
 }
+.banner {
+  min-width: 100%;
+}

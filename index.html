@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicons/favicon-16x16.png" type="image/x-icon">
     <title>Jadoo | Travel Agency Landing Page</title>
     <!-- Boostrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="css/custom.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
@@ -21,8 +22,8 @@
 </head>
 
 <body>
-    <!-- Navigation Start -->
     <header>
+        <!-- Navigation Start -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light bg-opacity-75 py-3 fixed-top">
             <div class="container">
                 <img src="assets/img/logo.svg" alt="">
@@ -32,7 +33,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
                         <li class="nav-item px-3">
                             <a class="nav-link active" aria-current="page" href="#">Service</a>
                         </li>
@@ -48,9 +49,9 @@
                         <li class="nav-item px-3">
                             <a class="nav-link" href="#">Login</a>
                         </li>
-                        <button type="button" class="btn btn-outline-dark">Sign Up</button>
+                        <button type="button" class="btn btn-outline-danger fs-5">Sign Up</button>
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2"
+                            <button class="btn dropdown-toggle fs-5" type="button" id="dropdownMenuButton2"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 EN
                             </button>
@@ -63,21 +64,20 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <!-- Navigation End -->
-    <main>
+        <!-- Navigation End -->
+
         <!-- Banner Start -->
-        <section>
-            <div class="container my-5 py-3">
+        <section class="banner">
+            <div class="container my-4 py-5">
                 <div class="banner d-flex justify-content-between">
                     <div class="banner-left d-flex flex-column justify-content-center">
-                        <span class="text-danger fw-bold">Best Destinations around the world</span>
-                        <h1>Travel, enjoy<br>and live a new<br>and full life</h1>
-                        <p>Built Wicket longer admire do barton vanity itself do in it. <br>
+                        <span class="text-danger fs-5 fw-bold">Best Destinations around the world</span>
+                        <h1 class="display-2 fw-bold">Travel, enjoy<br>and live a new<br>and full life</h1>
+                        <p class="lead fw-normal text-muted">Built Wicket longer admire do barton vanity itself do in
+                            it. <br>
                             Preferred to sportsmen it engrossed listening. Park gate <br>
                             sell they west hard for the.</p>
                         <div class="d-flex align-items-center">
-
                             <!-- Button trigger modal -->
                             <button class="btn btn-warning btn-lg text-light">Find out more</button>
                             <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
@@ -96,21 +96,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <span>Play Demo</span>
+                            <span class="fs-5">Play Demo</span>
                         </div>
                     </div>
                     <div class="banner-right d-flex justify-content-end">
-                        <img class="bg-img" src="assets/img/hero/hero-img.png" alt="" width="80%">
+                        <img class="img-fluid" src="assets/img/hero/hero-img.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
         <!-- Banner End -->
+    </header>
+
+    <main>
         <!-- Category Start -->
         <section>
-            <div class="container">
-                <h3 class="text-center">Category</h3>
-                <h1 class="text-center">We Offer Best Services</h1>
+            <div class="container mb-5">
+                <h4 class="text-center text-muted text-uppercase">Category</h4>
+                <h1 class="text-center display-4 fw-bold mb-5">We Offer Best Services</h1>
                 <div class="row row-cols-2 row-cols-md-4 g-4">
                     <div class="col">
                         <div class="card text-center border-light">
@@ -118,8 +121,9 @@
                                 <img src="assets/img/category/icon1.png" class="" alt="..." width="75px">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Calculated Weather</h5>
-                                <p class="card-text">Built Wicket longer admire do barton vanity itself do in it.</p>
+                                <h4 class="card-title">Calculated Weather</h4>
+                                <p class="card-text text-muted fs-5">Built Wicket longer admire do barton vanity itself
+                                    do in it.</p>
                             </div>
                         </div>
                     </div>
@@ -129,8 +133,9 @@
                                 <img src="assets/img/category/icon2.png" class="" alt="..." width="75px">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Best Flights</h5>
-                                <p class="card-text">Engrossed listening. Park gate sell they west hard for the.</p>
+                                <h4 class="card-title">Best Flights</h4>
+                                <p class="card-text text-muted fs-5">Engrossed listening. Park gate sell they west hard
+                                    for the.</p>
                             </div>
                         </div>
                     </div>
@@ -140,8 +145,9 @@
                                 <img src="assets/img/category/icon3.png" class="" alt="..." width="75px">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Local Events</h5>
-                                <p class="card-text">Barton vanity itself do in it. Preferd to men it engrossed
+                                <h4 class="card-title">Local Events</h4>
+                                <p class="card-text text-muted fs-5">Barton vanity itself do in it. Preferd to men it
+                                    engrossed
                                     listening.
                                 </p>
                             </div>
@@ -153,19 +159,21 @@
                                 <img src="assets/img/category/icon4.png" class="" alt="..." width="75px">
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Customization</h5>
-                                <p class="card-text">We deliver outsourced aviation services for military customers</p>
+                                <h4 class="card-title">Customization</h4>
+                                <p class="card-text text-muted fs-5">We deliver outsourced aviation services for
+                                    military customers</p>
                             </div>
                         </div>
                     </div>
                 </div>
         </section>
         <!-- Category End -->
+
         <!-- Destination Start -->
         <section>
-            <div class="container">
-                <h3 class="text-center">Top Selling</h3>
-                <h1 class="text-center">Top Destinations</h1>
+            <div class="container mb-5 py-5">
+                <h4 class="text-center text-muted">Top Selling</h4>
+                <h1 class="text-center display-4 fw-bold mb-5">Top Destinations</h1>
                 <div>
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
@@ -175,10 +183,10 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between">
-                                        <div class="destination fs-5 text-warning fw-bold">Rome, Italy</div>
-                                        <div class="price">$5,42k</div>
+                                        <div class="text-muted fs-4 fw-bold">Rome, Italy</div>
+                                        <div class="text-muted fs-4 fw-bold">$5,42k</div>
                                     </div>
-                                    <div class="duration mt-3"><img src="assets/img/dest/navigation.svg" alt="">
+                                    <div class="fs-5 fw-bold mt-3"><img src="assets/img/dest/navigation.svg" alt="">
                                         10 Days Trip</div>
                                 </div>
                             </div>
@@ -190,10 +198,10 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between">
-                                        <div class="destination fs-5 text-warning fw-bold">London, UK</div>
-                                        <div class="price">$4.2k</div>
+                                        <div class="text-muted fs-4 fw-bold">London, UK</div>
+                                        <div class="text-muted fs-4 fw-bold">$4.2k</div>
                                     </div>
-                                    <div class="duration mt-3"><img src="assets/img/dest/navigation.svg" alt="">
+                                    <div class="fs-5 fw-bold mt-3"><img src="assets/img/dest/navigation.svg" alt="">
                                         12 Days Trip</div>
                                 </div>
                             </div>
@@ -205,10 +213,10 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between">
-                                        <div class="destination fs-5 text-warning fw-bold">Full Europe</div>
-                                        <div class="price">$15k</div>
+                                        <div class="text-muted fs-4 fw-bold">Full Europe</div>
+                                        <div class="text-muted fs-4 fw-bold">$15k</div>
                                     </div>
-                                    <div class="duration mt-3"><img src="assets/img/dest/navigation.svg" alt="">
+                                    <div class="fs-5 fw-bold mt-3"><img src="assets/img/dest/navigation.svg" alt="">
                                         28 Days Trip</div>
                                 </div>
                             </div>
@@ -218,12 +226,13 @@
             </div>
         </section>
         <!-- Destination End -->
+
         <!-- Booking Start -->
         <section>
-            <div class="container d-flex">
+            <div class="container d-flex mb-5 py-5">
                 <div class="booking-left">
-                    <h3>Easy and Fast</h3>
-                    <h1>Book Your Next Trip <br> In 3 Easy Steps</h1>
+                    <h4 class="text-muted">Easy and Fast</h4>
+                    <h1 class="display-4 fw-bold">Book Your Next Trip <br> In 3 Easy Steps</h1>
                     <div>
                         <div class="booking-details d-flex">
                             <div>
@@ -231,7 +240,7 @@
                             </div>
                             <div>
                                 <h5>Choose Destination</h5>
-                                <p>Choose your favourite place. No matter
+                                <p class="lead fw-normal">Choose your favourite place. No matter
                                     where you travel inside the World.</p>
                             </div>
 
@@ -242,7 +251,7 @@
                             </div>
                             <div>
                                 <h5>Make Payment</h5>
-                                <p>After find your perfect spot, make your
+                                <p class="lead fw-normal">After find your perfect spot, make your
                                     payment and get ready to travel.</p>
                             </div>
                         </div>
@@ -252,7 +261,7 @@
                             </div>
                             <div>
                                 <h5>Reach Airport on Selected Date</h5>
-                                <p>Lastly, you have to arrive at the airport
+                                <p class="lead fw-normal">Lastly, you have to arrive at the airport
                                     on time and enjoy the vacation.</p>
                             </div>
                         </div>
@@ -261,7 +270,7 @@
                 <div class="booking-right d-flex align-items-center justify-content-center w-50">
                     <div class="booking-item border p-3">
                         <div class="booking-img">
-                            <img src="assets/img/steps/booking-img.jpg" alt="" class="rounded">
+                            <img src="assets/img/steps/booking-img.jpg" alt="" class="rounded-3">
                         </div>
                         <div class="booking-body">
                             <h4>Trip To Greece</h4>
@@ -289,12 +298,13 @@
             </div>
         </section>
         <!-- Booking End -->
+
         <!-- Testimonial Start -->
         <section>
-            <div class="container">
+            <div class="container mb-5 py-5">
                 <div class="testimonial-left">
-                    <h3>Testimonials</h3>
-                    <h1>What People Say <br> About Us.</h1>
+                    <h4 class="text-muted">Testimonials</h4>
+                    <h1 class="display-4 fw-bold">What People Say <br> About Us.</h1>
                 </div>
                 <div class="testimonial-right">
                     <div class="row">
@@ -313,6 +323,10 @@
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
+                        <div class="col-lg-6">
+
+
+                        </div>
                     </div>
 
                 </div>
@@ -320,9 +334,10 @@
 
         </section>
         <!-- Testimonial End -->
+
         <!-- Client Start -->
         <section>
-            <div class="container d-flex justify-content-center">
+            <div class="container d-flex justify-content-center py-5">
                 <img src="assets/img/partner/1.png" alt="" width="170px" class="p-3 mx-3">
                 <img src="assets/img/partner/2.png" alt="" width="170px" class="p-3 mx-3">
                 <img src="assets/img/partner/3.png" alt="" width="170px" class="p-3 mx-3">
@@ -331,16 +346,17 @@
             </div>
         </section>
         <!-- Client End -->
+
         <!-- Subscription Start -->
         <section>
-            <div class="container">
+            <div class="container mb-5 py-5">
                 <p class="text-center fs-4 fw-bold">Subscribe to get information, latest news and other <br> interesting
                     offers
-                    about Cobham</p>
+                    about <mark>Jadoo<mark>.</p>
                 <form class="d-flex justify-content-center">
-                    <div class="input-group w-50">
+                    <div class="input-group input-group-lg w-50">
                         <span class="input-group-text"><img src="assets/img/cta/mail.svg" alt="" width="15px"></span>
-                        <input type="email" class="form-control" placeholder="Enter Email">
+                        <input type="email" class="form-control " placeholder="Enter Email">
                         <button type="button" class="btn btn-outline-secondary">Subscribe</button>
                     </div>
                 </form>
@@ -348,47 +364,55 @@
         </section>
         <!-- Subscription End -->
     </main>
+
     <!-- Footer Start -->
-    <footer class="container">
+    <footer class="container mb-5 py-5">
         <div class="row">
-            <div class="col-md-3">
-                <h2>Jadoo</h2>
-                <p>Book your trip in minute, get full <br> Control for much longer.</p>
-            </div>
-            <div class="col-md-2 d-flex flex-column">
-                <a href="">Company</a>
-                <a href="">About</a>
-                <a href="">Career</a>
-                <a href="">Mobile</a>
-            </div>
-            <div class="col-md-2 d-flex flex-column">
-                <a href="">Contact</a>
-                <a href="">Help/FAQ</a>
-                <a href="">Prees</a>
-                <a href="">Affiliate</a>
-            </div>
-            <div class="col-md-2 d-flex flex-column">
-                <a href="">More</a>
-                <a href="">Airlinefees</a>
-                <a href="">Airline</a>
-                <a href="">Low fare tips</a>
-            </div>
-            <div class="col-md-3">
-                <div class="social-media-icons">
-                    <i class="fab fa-facebook-f fs-4 me-2"></i>
-                    <i class="fab fa-instagram fs-4 me-2"></i>
-                    <i class="fab fa-twitter fs-4"></i>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h1 class="display-2 fw-normal">Jadoo.</h1>
+                        <p class="fs-5">Book your trip in minute, get full Control for much longer.</p>
+                    </div>
+                    <div class="col d-flex flex-column fs-5">
+                        <a href="" class="text-decoration-none fw-bold text-dark my-3 fs-4">Company</a>
+                        <a href="" class="text-decoration-none fw-bold text-muted my-2">About</a>
+                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Career</a>
+                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Mobile</a>
+                    </div>
+                    <div class="col d-flex flex-column fs-5">
+                        <a href="" class="text-decoration-none fw-bold text-dark my-3 fs-4">Contact</a>
+                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Help/FAQ</a>
+                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Prees</a>
+                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Affiliate</a>
+                    </div>
+                    <div class="col d-flex flex-column fs-5">
+                        <a href="" class="text-decoration-none fw-bold text-dark my-3 fs-4">More</a>
+                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Airlinefees</a>
+                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Airline</a>
+                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Low fare tips</a>
+                    </div>
                 </div>
-                <span>Discover our app</span>
-                <div class="app-store d-flex">
-                    <a href=""><img src="assets/img/play-store.png" alt=""></a>
-                    <a href=""><img src="assets/img/apple-store.png" alt=""></a>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <div class="social-media-icons">
+                        <i class="fab fa-facebook-f fs-4 me-2"></i>
+                        <i class="fab fa-instagram fs-4 me-2"></i>
+                        <i class="fab fa-twitter fs-4"></i>
+                    </div>
+                    <span class="fw-bold fs-5 text-muted">Discover our app</span>
+                    <div class="d-flex border border-warning">
+                        <img src="assets/img/play-store.png" alt="">
+                        <img src="assets/img/apple-store.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
 
     </footer>
     <!-- Footer End -->
+
     <!-- Boostrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -397,7 +421,7 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!----- Script JS ----->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
