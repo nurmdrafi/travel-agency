@@ -5,8 +5,18 @@ body {
   width: 600px;
   height: 300px;
 }
-.banner {
-  min-width: 100%;
+.swiper img{
+  width: 80px;
+}
+.banner-bg {
+  background-image: url("../assets/img/hero/hero-bg.svg");
+  background-position: top right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow-y: visible;
+}
+.banner{
+  min-height: 100vh;
 }
 .border-radius {
   border-radius: 40px;

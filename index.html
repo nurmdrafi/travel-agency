@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
-<body>
+<body class="banner-bg">
     <header>
         <!-- Navigation Start -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light bg-opacity-75 py-3 fixed-top">
@@ -37,7 +37,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6">
                         <li class="nav-item px-3">
                             <a class="nav-link active" aria-current="page" href="#">Service</a>
                         </li>
@@ -53,14 +53,14 @@
                         <li class="nav-item px-3">
                             <a class="nav-link" href="#">Login</a>
                         </li>
-                        <button type="button" class="btn btn-outline-danger fs-5">Sign Up</button>
+                        <button type="button" class="btn btn-outline-danger fs-6">Sign Up</button>
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle fs-5" type="button" id="dropdownMenuButton2"
+                            <button class="btn dropdown-toggle " type="button" id="dropdownMenuButton2"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 EN
                             </button>
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
-                                <li><a class="dropdown-item active" href="#">EN</a></li>
+                                <li><a class="dropdown-item active fs-6" href="#">EN</a></li>
                                 <li><a class="dropdown-item" href="#">BN</a></li>
                             </ul>
                         </div>
@@ -71,41 +71,47 @@
         <!-- Navigation End -->
 
         <!-- Banner Start -->
-        <section class="banner">
-            <div class="container my-4 py-5">
-                <div class="banner d-flex justify-content-between">
-                    <div class="banner-left d-flex flex-column justify-content-center">
-                        <span class="text-danger fs-5 fw-bold">Best Destinations around the world</span>
-                        <h1 class="display-2 fw-bold">Travel, enjoy<br>and live a new<br>and full life</h1>
-                        <p class="lead fw-normal text-muted">Built Wicket longer admire do barton vanity itself do in
-                            it. <br>
-                            Preferred to sportsmen it engrossed listening. Park gate <br>
-                            sell they west hard for the.</p>
-                        <div class="d-flex align-items-center">
-                            <!-- Button trigger modal -->
-                            <button class="btn btn-warning btn-lg text-light shadow-lg">Find out more</button>
-                            <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                class="play-btn bg-danger rounded-circle bg-opacity-75 d-flex justify-content-center align-items-center p-3 mx-3 shadow-lg">
-                                <img src="assets/img/hero/play.svg" alt="" width="20">
-                            </div>
-                            <!-- Modal -->
-                            <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-lg">
-                                    <div class="modal-content bg-transparent">
-                                        <iframe class="border-radius" width="810" height="452"
-                                            src="https://www.youtube.com/embed/NcBjx_eyvxc" title="YouTube video player"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
+        <section class="banner mt-5 pt-5">
+            <div class="container my-5 py-5">
+                <div class="row row-cols-lg-2 row-cols-md-1">
+                    <div class="col">
+                        <div class="d-flex flex-column justify-content-center">
+                            <span class="text-danger fs-5 fw-bold">Best Destinations around the world</span>
+                            <h1 class="display-2 fw-bold">Travel, enjoy and live a new and full life</h1>
+                            <p class="lead fw-normal text-muted">Built Wicket longer admire do barton vanity itself do
+                                in
+                                it. <br>
+                                Preferred to sportsmen it engrossed listening. Park gate <br>
+                                sell they west hard for the.</p>
+                            <div class="d-flex align-items-center">
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-warning btn-lg text-light shadow-lg">Find out more</button>
+                                <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    class="play-btn bg-danger rounded-circle bg-opacity-75 d-flex justify-content-center align-items-center p-3 mx-3 shadow-lg">
+                                    <img src="assets/img/hero/play.svg" alt="" width="20">
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                                        <div class="modal-content bg-transparent">
+                                            <iframe class="border-radius" width="810" height="452"
+                                                src="https://www.youtube.com/embed/NcBjx_eyvxc"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
                                     </div>
                                 </div>
+                                <span class="fs-5">Play Demo</span>
                             </div>
-                            <span class="fs-5">Play Demo</span>
                         </div>
                     </div>
-                    <div class="banner-right d-flex justify-content-end">
-                        <img class="img-fluid" src="assets/img/hero/hero-img.png" alt="">
+                    <!-- Banner Right -->
+                    <div class="col">
+                        <div class="d-flex justify-content-end">
+                            <img class="img-fluid" src="assets/img/hero/hero-img.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,7 +187,7 @@
                 <h1 class="text-center display-4 fw-bold mb-5">Top Destinations</h1>
                 <div>
                     <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
+                        <div class="cols">
                             <div class="card border-radius shadow">
                                 <div class="card-img d-flex justify-content-center">
                                     <img src="assets/img/dest/dest1.jpg" alt="" class="card-img-top">
@@ -232,78 +238,85 @@
         </section>
         <!-- Destination End -->
 
-        <!-- Booking Start -->
         <section>
-            <div class="container d-flex mb-5 py-5">
-                <div class="booking-left">
-                    <h4 class="text-muted">Easy and Fast</h4>
-                    <h1 class="display-4 fw-bold">Book Your Next Trip <br> In 3 Easy Steps</h1>
-                    <div>
-                        <div class="booking-details d-flex">
-                            <div>
-                                <img src="assets/img/steps/selection.svg" alt="" class="bg-warning p-3 me-4 rounded-3"
-                                    width="55" height="55">
-                            </div>
-                            <div>
-                                <h5>Choose Destination</h5>
-                                <p class="lead fw-normal">Choose your favourite place. No matter
-                                    where you travel inside the World.</p>
-                            </div>
+            <!-- Booking Left -->
+            <div class="container mb-5 py-5">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <h4 class="text-muted">Easy and Fast</h4>
+                        <h1 class="display-4 fw-bold mb-5">Book Your Next Trip <br> In 3 Easy Steps</h1>
+                        <div>
+                            <div class="d-flex my-3">
+                                <div>
+                                    <img src="assets/img/steps/selection.svg" alt=""
+                                        class="bg-warning p-3 me-4 rounded-3" width="55" height="55">
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Choose Destination</h5>
+                                    <p class="lead fw-normal text-muted">Choose your favourite place. No matter
+                                        where you travel inside the World.</p>
+                                </div>
 
-                        </div>
-                        <div class="booking-details d-flex">
-                            <div>
-                                <img src="assets/img/steps/water-sport.svg" alt="" class="bg-danger p-3 me-4 rounded-3"
-                                    width="55" height="55">
                             </div>
-                            <div>
-                                <h5>Make Payment</h5>
-                                <p class="lead fw-normal">After find your perfect spot, make your
-                                    payment and get ready to travel.</p>
+                            <div class="d-flex my-3">
+                                <div>
+                                    <img src="assets/img/steps/water-sport.svg" alt=""
+                                        class="bg-danger p-3 me-4 rounded-3" width="55" height="55">
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Make Payment</h5>
+                                    <p class="lead fw-normal text-muted">After find your perfect spot, make your
+                                        payment and get ready to travel.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="booking-details d-flex">
-                            <div>
-                                <img src="assets/img/steps/taxi.svg" alt="" class="bg-primary p-3 me-4 rounded-3"
-                                    width="55" height="55">
-                            </div>
-                            <div>
-                                <h5>Reach Airport on Selected Date</h5>
-                                <p class="lead fw-normal">Lastly, you have to arrive at the airport
-                                    on time and enjoy the vacation.</p>
+                            <div class="d-flex my-3">
+                                <div>
+                                    <img src="assets/img/steps/taxi.svg" alt="" class="bg-primary p-3 me-4 rounded-3"
+                                        width="55" height="55">
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Reach Airport on Selected Date</h5>
+                                    <p class="lead fw-normal text-muted">Lastly, you have to arrive at the airport
+                                        on time and enjoy the vacation.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="booking-right d-flex align-items-center justify-content-center w-50">
-                    <div class="booking-item border p-3">
-                        <div class="booking-img">
-                            <img src="assets/img/steps/booking-img.jpg" alt="" class="rounded-3">
-                        </div>
-                        <div class="booking-body">
-                            <h4>Trip To Greece</h4>
-                            <span>14-29 June | by Robbin joseph</span>
-                            <div class="mt-3">
-                                <img src="assets/img/steps/leaf.svg" alt=""
-                                    class="bg-secondary bg-opacity-25 rounded-circle p-2 me-4" width="35px">
-                                <img src="assets/img/steps/map.svg" alt=""
-                                    class="bg-secondary bg-opacity-25 rounded-circle p-2 me-4" width="35px">
-                                <img src="assets/img/steps/send.svg" alt=""
-                                    class="bg-secondary bg-opacity-25 rounded-circle p-2" width="35px">
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <div class="d-flex justify-content-start align-items-center mt-3">
-                                    <img src="assets/img/steps/building.svg" alt="" width="20px">
-                                    <span class="ps-2">24 people going</span>
+
+                    <!-- Booking Right -->
+                    <div class="col-md-12 col-lg-6">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="p-3 border-radius shadow-lg h-auto">
+                                <div>
+                                    <img src="assets/img/steps/booking-img.jpg" alt="" class="border-radius">
                                 </div>
-                                <div class="box mt-3">
-                                    <img src="assets/img/steps/heart.svg" alt="">
+                                <div>
+                                    <h4 class="mt-5">Trip To Greece</h4>
+                                    <span class="mt-3">14-29 June | by Robbin joseph</span>
+                                    <div class="mt-4">
+                                        <img src="assets/img/steps/leaf.svg" alt=""
+                                            class="bg-secondary bg-opacity-25 rounded-circle p-2 me-4" width="35px">
+                                        <img src="assets/img/steps/map.svg" alt=""
+                                            class="bg-secondary bg-opacity-25 rounded-circle p-2 me-4" width="35px">
+                                        <img src="assets/img/steps/send.svg" alt=""
+                                            class="bg-secondary bg-opacity-25 rounded-circle p-2" width="35px">
+                                    </div>
+                                    <div class="d-flex justify-content-between my-4">
+                                        <div class="d-flex justify-content-start align-items-center mt-3">
+                                            <img src="assets/img/steps/building.svg" alt="" width="20px">
+                                            <span class="ps-2">24 people going</span>
+                                        </div>
+                                        <div class="box mt-3">
+                                            <img src="assets/img/steps/heart.svg" alt="">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </section>
         <!-- Booking End -->
 
@@ -322,9 +335,27 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide display-2">Slide 1</div>
-                                <div class="swiper-slide display-2">Slide 2</div>
-                                <div class="swiper-slide display-2">Slide 3</div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/testimonial/author1.png" alt="">
+                                    <p>"On the Windows talking painted pasture yet its express parties use. Sure last
+                                        upon he same as knew next. Of believed or diverted no."</p>
+                                    <h3>Mike taylor</h3>
+                                    <h5>Dhaka, Pakistan</h5>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/testimonial/author2.png" alt="">
+                                    <p>"On the Windows talking painted pasture yet its express parties use. Sure last
+                                        upon he same as knew next. Of believed or diverted no."</p>
+                                    <h3>Mike taylor</h3>
+                                    <h5>Sylhet, Pakistan</h5>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/testimonial/author3.png" alt="">
+                                    <p>"On the Windows talking painted pasture yet its express parties use. Sure last
+                                        upon he same as knew next. Of believed or diverted no."</p>
+                                    <h3>Mike taylor</h3>
+                                    <h5>Chittagong, Pakistan</h5>
+                                </div>
                                 ...
                             </div>
                             <div class="swiper-pagination"></div>
@@ -414,15 +445,15 @@
                             <i class="fab fa-twitter fs-4 p-3"></i>
                         </div>
                     </div>
-                    <div class="fw-bold fs-5 text-muted text-center my-3">Discover our app</div>
-                    <div class="d-flex justify-content-around my-sm-5">
+                    <div class="fw-bold fs-5 text-muted text-center my-4">Discover our app</div>
+                    <div class="d-flex justify-content-around my-2">
                         <a href="#"><img src="assets/img/play-store.png" alt="" class="img-fluid" width="127"></a>
                         <a href="#"><img src="assets/img/apple-store.png" alt="" class="img-fluid" width="120"></a>
                     </div>
                 </div>
             </div>
         </div>
-        <p class="text-center text-muted fs-5">All rights reserved@example.com</p>
+        <p class="text-center text-muted fs-5 my-4">All rights reserved@example.com</p>
 
     </footer>
     <!-- Footer End -->
