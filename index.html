@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
     <!----- All Vendors CSS ----->
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -79,18 +83,19 @@
                             sell they west hard for the.</p>
                         <div class="d-flex align-items-center">
                             <!-- Button trigger modal -->
-                            <button class="btn btn-warning btn-lg text-light">Find out more</button>
+                            <button class="btn btn-warning btn-lg text-light shadow-lg">Find out more</button>
                             <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                class="play-btn bg-danger rounded-circle bg-opacity-75 d-flex justify-content-center align-items-center p-3 mx-3">
-                                <img src="assets/img/hero/play.svg" alt="">
+                                class="play-btn bg-danger rounded-circle bg-opacity-75 d-flex justify-content-center align-items-center p-3 mx-3 shadow-lg">
+                                <img src="assets/img/hero/play.svg" alt="" width="20">
                             </div>
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-lg">
-                                    <div class="modal-content">
-                                        <iframe width="810" height="452" src="https://www.youtube.com/embed/NcBjx_eyvxc"
-                                            title="YouTube video player" frameborder="0"
+                                    <div class="modal-content bg-transparent">
+                                        <iframe class="border-radius" width="810" height="452"
+                                            src="https://www.youtube.com/embed/NcBjx_eyvxc" title="YouTube video player"
+                                            frameborder="0"
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                             allowfullscreen></iframe>
                                     </div>
@@ -177,7 +182,7 @@
                 <div>
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
-                            <div class="card">
+                            <div class="card border-radius shadow">
                                 <div class="card-img d-flex justify-content-center">
                                     <img src="assets/img/dest/dest1.jpg" alt="" class="card-img-top">
                                 </div>
@@ -186,13 +191,13 @@
                                         <div class="text-muted fs-4 fw-bold">Rome, Italy</div>
                                         <div class="text-muted fs-4 fw-bold">$5,42k</div>
                                     </div>
-                                    <div class="fs-5 fw-bold mt-3"><img src="assets/img/dest/navigation.svg" alt="">
+                                    <div class="fs-5 fw-bold my-3"><img src="assets/img/dest/navigation.svg" alt="">
                                         10 Days Trip</div>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card">
+                            <div class="card border-radius shadow">
                                 <div class="card-img d-flex justify-content-center">
                                     <img src="assets/img/dest/dest2.jpg" alt="" class="card-img-top">
                                 </div>
@@ -201,13 +206,13 @@
                                         <div class="text-muted fs-4 fw-bold">London, UK</div>
                                         <div class="text-muted fs-4 fw-bold">$4.2k</div>
                                     </div>
-                                    <div class="fs-5 fw-bold mt-3"><img src="assets/img/dest/navigation.svg" alt="">
+                                    <div class="fs-5 fw-bold my-3"><img src="assets/img/dest/navigation.svg" alt="">
                                         12 Days Trip</div>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card">
+                            <div class="card border-radius shadow">
                                 <div class="card-img d-flex justify-content-center">
                                     <img src="assets/img/dest/dest3.jpg" alt="" class="card-img-top">
                                 </div>
@@ -216,7 +221,7 @@
                                         <div class="text-muted fs-4 fw-bold">Full Europe</div>
                                         <div class="text-muted fs-4 fw-bold">$15k</div>
                                     </div>
-                                    <div class="fs-5 fw-bold mt-3"><img src="assets/img/dest/navigation.svg" alt="">
+                                    <div class="fs-5 fw-bold my-3"><img src="assets/img/dest/navigation.svg" alt="">
                                         28 Days Trip</div>
                                 </div>
                             </div>
@@ -236,7 +241,8 @@
                     <div>
                         <div class="booking-details d-flex">
                             <div>
-                                <img src="assets/img/steps/selection.svg" alt="" class="bg-warning p-3 me-4 rounded-3">
+                                <img src="assets/img/steps/selection.svg" alt="" class="bg-warning p-3 me-4 rounded-3"
+                                    width="55" height="55">
                             </div>
                             <div>
                                 <h5>Choose Destination</h5>
@@ -247,7 +253,8 @@
                         </div>
                         <div class="booking-details d-flex">
                             <div>
-                                <img src="assets/img/steps/water-sport.svg" alt="" class="bg-danger p-3 me-4 rounded-3">
+                                <img src="assets/img/steps/water-sport.svg" alt="" class="bg-danger p-3 me-4 rounded-3"
+                                    width="55" height="55">
                             </div>
                             <div>
                                 <h5>Make Payment</h5>
@@ -257,7 +264,8 @@
                         </div>
                         <div class="booking-details d-flex">
                             <div>
-                                <img src="assets/img/steps/taxi.svg" alt="" class="bg-primary p-3 me-4 rounded-3">
+                                <img src="assets/img/steps/taxi.svg" alt="" class="bg-primary p-3 me-4 rounded-3"
+                                    width="55" height="55">
                             </div>
                             <div>
                                 <h5>Reach Airport on Selected Date</h5>
@@ -302,47 +310,41 @@
         <!-- Testimonial Start -->
         <section>
             <div class="container mb-5 py-5">
-                <div class="testimonial-left">
-                    <h4 class="text-muted">Testimonials</h4>
-                    <h1 class="display-4 fw-bold">What People Say <br> About Us.</h1>
-                </div>
-                <div class="testimonial-right">
-                    <div class="row">
-
-                        <div class="col-lg-6">
-                            <!-- Slider main container -->
-                            <div class="swiper">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                                    <div class="swiper-slide display-2">Slide 1</div>
-                                    <div class="swiper-slide display-2">Slide 2</div>
-                                    <div class="swiper-slide display-2">Slide 3</div>
-                                    ...
-                                </div>
-                                <div class="swiper-pagination"></div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h4 class="text-muted">Testimonials</h4>
+                        <h1 class="display-4 fw-bold">What People Say <br> About Us.</h1>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide display-2">Slide 1</div>
+                                <div class="swiper-slide display-2">Slide 2</div>
+                                <div class="swiper-slide display-2">Slide 3</div>
+                                ...
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-
-
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </section>
         <!-- Testimonial End -->
 
         <!-- Client Start -->
         <section>
-            <div class="container d-flex justify-content-center py-5">
-                <img src="assets/img/partner/1.png" alt="" width="170px" class="p-3 mx-3">
-                <img src="assets/img/partner/2.png" alt="" width="170px" class="p-3 mx-3">
-                <img src="assets/img/partner/3.png" alt="" width="170px" class="p-3 mx-3">
-                <img src="assets/img/partner/4.png" alt="" width="170px" class="p-3 mx-3">
-                <img src="assets/img/partner/5.png" alt="" width="170px" class="p-3 mx-3">
+            <div class="container">
+                <div class="d-flex justify-content-center flex-wrap py-5">
+                    <img src="assets/img/partner/1.png" alt="" width="170px" class="p-3 mx-3">
+                    <img src="assets/img/partner/2.png" alt="" width="170px" class="p-3 mx-3">
+                    <img src="assets/img/partner/3.png" alt="" width="170px" class="p-3 mx-3">
+                    <img src="assets/img/partner/4.png" alt="" width="170px" class="p-3 mx-3">
+                    <img src="assets/img/partner/5.png" alt="" width="170px" class="p-3 mx-3">
+                </div>
             </div>
         </section>
         <!-- Client End -->
@@ -368,47 +370,61 @@
     <!-- Footer Start -->
     <footer class="container mb-5 py-5">
         <div class="row">
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-5">
-                        <h1 class="display-2 fw-normal">Jadoo.</h1>
-                        <p class="fs-5">Book your trip in minute, get full Control for much longer.</p>
-                    </div>
-                    <div class="col d-flex flex-column fs-5">
-                        <a href="" class="text-decoration-none fw-bold text-dark my-3 fs-4">Company</a>
-                        <a href="" class="text-decoration-none fw-bold text-muted my-2">About</a>
-                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Career</a>
-                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Mobile</a>
-                    </div>
-                    <div class="col d-flex flex-column fs-5">
-                        <a href="" class="text-decoration-none fw-bold text-dark my-3 fs-4">Contact</a>
-                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Help/FAQ</a>
-                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Prees</a>
-                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Affiliate</a>
-                    </div>
-                    <div class="col d-flex flex-column fs-5">
-                        <a href="" class="text-decoration-none fw-bold text-dark my-3 fs-4">More</a>
-                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Airlinefees</a>
-                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Airline</a>
-                        <a href="" class="text-decoration-none fw-bold text-muted my-2">Low fare tips</a>
-                    </div>
+
+
+            <div class="col-lg-4 col-md-6 order-0">
+                <h1 class="display-2 fw-normal">Jadoo.</h1>
+                <p class="fs-5">Book your trip in minute, get full Control for much longer.</p>
+            </div>
+            <div class="col-lg-2 col-md-4 order-2">
+                <div class="d-flex flex-column fs-5">
+                    <a href="" class="text-decoration-none fw-bold text-dark my-3 fs-4">Company</a>
+                    <a href="" class="text-decoration-none fw-bold text-muted my-2">About</a>
+                    <a href="" class="text-decoration-none fw-bold text-muted my-2">Career</a>
+                    <a href="" class="text-decoration-none fw-bold text-muted my-2">Mobile</a>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div>
-                    <div class="social-media-icons">
-                        <i class="fab fa-facebook-f fs-4 me-2"></i>
-                        <i class="fab fa-instagram fs-4 me-2"></i>
-                        <i class="fab fa-twitter fs-4"></i>
+            <div class="col-lg-2 col-md-4 order-3">
+                <div class="d-flex flex-column fs-5">
+                    <a href="" class="text-decoration-none fw-bold text-dark my-3 fs-4">Contact</a>
+                    <a href="" class="text-decoration-none fw-bold text-muted my-2">Help/FAQ</a>
+                    <a href="" class="text-decoration-none fw-bold text-muted my-2">Prees</a>
+                    <a href="" class="text-decoration-none fw-bold text-muted my-2">Affiliate</a>
+                    
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 order-4">
+                <div class="d-flex flex-column fs-5">
+                    <a href="" class="text-decoration-none fw-bold text-dark my-3 fs-4">More</a>
+                    <a href="" class="text-decoration-none fw-bold text-muted my-2">Airlinefees</a>
+                    <a href="" class="text-decoration-none fw-bold text-muted my-2">Airline</a>
+                    <a href="" class="text-decoration-none fw-bold text-muted my-2">Low fare tips</a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 order-1">
+                <div class="d-flex flex-column justify-content-between h-100">
+                    <div class="d-flex justify-content-around">
+                        <div class="bg-secondary bg-opacity-10 rounded-circle social-icon">
+                            <i class="fab fa-facebook-f fs-4 p-3"></i>
+                        </div>
+                        <div class="bg-secondary bg-opacity-10 rounded-circle social-icon">
+                            <i class="fab fa-instagram fs-4 p-3"></i>
+                        </div>
+
+                        <div class="bg-secondary bg-opacity-10 rounded-circle social-icon">
+                            <i class="fab fa-twitter fs-4 p-3"></i>
+                        </div>
                     </div>
-                    <span class="fw-bold fs-5 text-muted">Discover our app</span>
-                    <div class="d-flex border border-warning">
-                        <img src="assets/img/play-store.png" alt="">
-                        <img src="assets/img/apple-store.png" alt="">
+                    <div class="fw-bold fs-5 text-muted">Discover our app</div>
+                    <div class="d-flex justify-content-around">
+                        <a href="#"><img src="assets/img/play-store.png" alt="" class="" width="127"></a>
+                        <a href="#"><img src="assets/img/apple-store.png" alt="" class="" width="120"></a>
                     </div>
                 </div>
             </div>
         </div>
+        <p class="text-center text-muted fs-5 pt-4">All rights reserved@example.com</p>
 
     </footer>
     <!-- Footer End -->
