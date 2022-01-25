@@ -18,6 +18,11 @@ body {
 .banner{
   min-height: 100vh;
 }
+
+.highlighted::after{
+  content: '';
+  
+}
 .border-radius {
   border-radius: 40px;
 }
