@@ -2,10 +2,10 @@ body {
   font-family: "Volkhov", serif;
 }
 .swiper {
-  width: 600px;
+  width: 90%;
   height: 300px;
 }
-.swiper img{
+.swiper img {
   width: 80px;
 }
 .banner-bg {
@@ -15,13 +15,12 @@ body {
   background-repeat: no-repeat;
   overflow-y: visible;
 }
-.banner{
+.banner {
   min-height: 100vh;
 }
 
-.highlighted::after{
-  content: '';
-  
+.highlighted::after {
+  content: "";
 }
 .border-radius {
   border-radius: 40px;
@@ -35,4 +34,33 @@ body {
 }
 .form-width {
   max-width: 600px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  transform: rotate(90deg) !important;
+  transform-origin: left center 50% !important;
+}
+
+.swiper-button-prev {
+  top: 30% !important;
+  left: 52% !important; 
+  position: absolute;
+}
+
+.swiper-button-next {
+  top: 80% !important;
+  right: 20% !important; 
+  position: absolute;
+  bottom: 0 !important;
+}
+.custom-nav {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  right: 0;
+  top: 45%;
+  transform: translateY(-45%);
+  z-index: 100;
+  
 }

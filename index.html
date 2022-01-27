@@ -244,7 +244,7 @@
         <section>
             <!-- Booking Start -->
             <div class="container mb-5 py-5 position-relative">
-                <div class="position-absolute top-0 end-0" style="z-index: -1;">
+                <div class="position-absolute top-0 end-0 d-none d-lg-block" style="z-index: -1;">
                     <img src="assets/img/steps/bg.png" alt="">
                 </div>
                 <div class="row">
@@ -330,42 +330,55 @@
         <!-- Testimonial Start -->
         <section>
             <div class="container mb-5 py-5">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
+                <div class="row row-cols-md-1 row-cols-lg-2">
+                    <div class="col">
                         <h4 class="text-muted">Testimonials</h4>
                         <h1 class="display-4 fw-bold">What People Say <br> About Us.</h1>
+                        <div class="swiper" style="width: 100px; height: 50px;">
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col">
                         <!-- Slider main container -->
                         <div class="swiper">
+                            <!-- Swiper Custom Vertical Navigation -->
+                            <div class="custom-nav">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <img src="assets/img/testimonial/author1.png" alt="">
-                                    <p>"On the Windows talking painted pasture yet its express parties use. Sure last
+                                    <img src="assets/img/testimonial/author1.png" alt="" class="mt-4 px-1">
+                                    <p class="w-75">"On the Windows talking painted pasture yet its express parties use.
+                                        Sure
+                                        last
                                         upon he same as knew next. Of believed or diverted no."</p>
                                     <h3>Mike taylor</h3>
                                     <h5>Dhaka, Pakistan</h5>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="assets/img/testimonial/author2.png" alt="">
-                                    <p>"On the Windows talking painted pasture yet its express parties use. Sure last
+                                    <img src="assets/img/testimonial/author2.png" alt="" class="mt-4 px-1">
+                                    <p class="w-75">"On the Windows talking painted pasture yet its express parties use.
+                                        Sure
+                                        last
                                         upon he same as knew next. Of believed or diverted no."</p>
                                     <h3>Mike taylor</h3>
                                     <h5>Sylhet, Pakistan</h5>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="assets/img/testimonial/author3.png" alt="">
-                                    <p>"On the Windows talking painted pasture yet its express parties use. Sure last
+                                    <img src="assets/img/testimonial/author3.png" alt="" class="mt-4 px-1">
+                                    <p class="w-75">"On the Windows talking painted pasture yet its express parties use.
+                                        Sure
+                                        last
                                         upon he same as knew next. Of believed or diverted no."</p>
                                     <h3>Mike taylor</h3>
                                     <h5>Chittagong, Pakistan</h5>
                                 </div>
-                                ...
                             </div>
-                            <div class="swiper-pagination"></div>
+
                         </div>
                     </div>
                 </div>
